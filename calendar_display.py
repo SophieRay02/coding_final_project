@@ -1,3 +1,5 @@
+import datetime
+
 class Display:
     def calendar_display(self, input_year, input_month, day):
         '''This function represents the general calendar-related code for presentation
@@ -29,3 +31,17 @@ class Display:
         print('Sun', 'Mon', 'Tue', 'wed', 'Thu', 'Fri', 'Sat')
 
 
+
+####### CREATING FUTURE USE FUNCTIONS (not sure where to put them yet) #########
+def isleap(year):
+    # Returns True for leap years and False for non-leap years
+    return year % 4 == 0 and (year % 100 != 0 or year % 400 ==0)
+
+def weekday(year, month, day):
+    return datetime.adte(year, month, day).weekday()
+
+
+
+
+
+    
